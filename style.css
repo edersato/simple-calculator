@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Bellota Text', cursive;
+    display: flex;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #45b1e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #242122;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calculator {
+    max-width: 21em;
+    height: 34em;
+    background: #242122;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .value {
+    grid-column: span 4;
+    width: 100%;
+    border: 0;
+    background: #111111;
+    color: #fafafa;
+    text-align: right;
+    padding: 10px;
+    font-size: 3em;
+    resize: none;
+    font-family: 'Gupter', serif;
+  }
+  
+  .calculator .number {
+    border: 0;
+    margin: 1px;
+    cursor: pointer;
+    background: #fafafa;
+    color: #333333;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calculator .number:hover {
+    background: #3996c5a8;
+    color: #FFFFFF;
+    transition: .5s;
+  }
+  
+  .calculator .operator {
+    background: #333333;
+    color: #fafafa;
+    font-size: 1.2rem;
+  }
+  
+  .calculator .cleaner {
+    grid-column: span 3;
+    width: 99.1%;
+  }
+  
+  .container a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+  }
+  
+  .container a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+  }
+
+  .copyright .link {
+    color: #242122;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .copyright .link:hover {
+    color: white;
+  }

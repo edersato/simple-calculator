@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Gupter:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Simple Calculator Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Simple Calculator</h2>
+        <form class="calculator" name="calc">
+            <textarea type="text " class="value" name="txt" readonly="" placeholder="0"></textarea>
+            <span class="number operator cleaner" onclick="cleanScreen()">C</span>
+            <span class="number operator" onclick="operator('/')">/</span>
+            <span class="number" onclick="placeNumber('7')">7</span>
+            <span class="number" onclick="placeNumber('8')">8</span>
+            <span class="number" onclick="placeNumber('9')">9</span>
+            <span class="number operator" onclick="operator('*')">x</span>
+            <span class="number" onclick="placeNumber('4')">4</span>
+            <span class="number" onclick="placeNumber('5')">5</span>
+            <span class="number" onclick="placeNumber('6')">6</span>
+            <span class="number operator" onclick="operator('-')">-</span>
+            <span class="number" onclick="placeNumber('1')">1</span>
+            <span class="number" onclick="placeNumber('2')">2</span>
+            <span class="number" onclick="placeNumber('3')">3</span>
+            <span class="number operator" onclick="operator('+')">+</span>
+            <span class="number" onclick="placeNumber('0')">0</span>
+            <span class="number" onclick="placeNumber('00')">00</span>
+            <span class="number" onclick="placeNumber('.')">,</span>
+            <span class="number operator" onclick="result()">=</span>
+        </form>
+        <p class="copyright">Desenvolvido por <a class="link" href="http://edersato.github.io/portfolio">Eder Sato</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/mathjs@7.5.1/dist/math.min.js"></script>
+</body>
+
+</html>
